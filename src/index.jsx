@@ -37,6 +37,10 @@ var MaskedInput = React.createClass({
     })
   },
 
+  clear() {
+    this.mask.setValue('');
+  },
+
   _updateMaskSelection() {
     this.mask.selection = getSelection(this.getDOMNode())
   },
